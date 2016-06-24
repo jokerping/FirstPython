@@ -3,6 +3,7 @@
 
 import socket
 import threading
+
 mySocket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)#创建基于ipv4和TCP的socket
 mySocket.bind(('127.0.0.1',9888))#监听端口
 mySocket.listen(5)#监听端口 传入的参数指定等待连接的最大数量
